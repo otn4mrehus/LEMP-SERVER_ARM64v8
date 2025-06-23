@@ -1,8 +1,8 @@
 # LEMP - ARM64
-Lightweight Web Server (Linux, Nginx, MySQL, dan PHP) with Docker
+Lightweight Web Server (Linux, Nginx, MySQL, dan PHP) For LEMP Armbian Base on Docker
 - STB Device
   ( Support: Linux - ARM 64 bit )
-- Auto Switch PHP Version (Bash Menu)
+- Auto Switch PHP Version (With Bash Menu)
   - Stop/Start & Build Container
   - Create Directory Web - Data
 - Container Service:
