@@ -26,9 +26,9 @@ services:
 
     volumes:
 
-      - /home/masihgurutkj/web/otnam:/var/www/html
+      - ${HOME}/web/otnam/web:/var/www/html
 
-      - ./php/php.ini:/usr/local/etc/php/php.ini
+      - ${PWD}/php/php.ini:/usr/local/etc/php/php.ini
 
     networks:
       - otnam
@@ -52,9 +52,9 @@ services:
 
     volumes:
 
-      - /home/masihgurutkj/web/otnam:/var/www/html:ro
+      - ${HOME}/web/otnam/web:/var/www/html:ro
 
-      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
+      - ${PWD}/nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
 
     networks:
       - otnam
@@ -90,9 +90,9 @@ services:
 
     volumes:
 
-      - ./database:/var/lib/mysql
+      - ${HOME}/web/otname/database:/var/lib/mysql
 
-      - ./mariadb/my.cnf:/etc/mysql/conf.d/my.cnf
+      - ${PWD}/mariadb/my.cnf:/etc/mysql/conf.d/my.cnf
 
     networks:
 
